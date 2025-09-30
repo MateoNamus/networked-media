@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    /* all inner spacing inside the element */
+    padding: 0;
+    /* easier to adjust width and height of elements to be calculated, since the default content-box calculate px twice (e.g. width: 200px and padding: 20px will be 240px (200 + 20 + 20), but border-box stays 200px) */
+    box-sizing: border-box;
+    /* simply text library to make numbers fancy for the clock */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* convert elements into a flex container, where they are able to arrange according to main axis */ 
+    display: flex;
+    /* arranging the elements that are converted to flex elements. this one specifically arranging it to the center */
+    justify-content: center;
+    /* straightforward, center item */
+    align-items: center;
+    height: 100vh;
+    /* changed to monochromatic color to create light glowing effect from the clock */
+    background: radial-gradient(circle, #7b7b7b, #000000);
+}
+
+/* Assign --n for each clock number */
+.n1  { --n: 1; }
+.n2  { --n: 2; }
+.n3  { --n: 3; }
+.n4  { --n: 4; }
+.n5  { --n: 5; }
+.n6  { --n: 6; }
+.n7  { --n: 7; }
+.n8  { --n: 8; }
+.n9  { --n: 9; }
+.n10 { --n: 10; }
+.n11 { --n: 11; }
+.n12 { --n: 12; }
+
+.clock {
+    /* Had to fiddle around multiple times with width and height for a desired size so that there's space for eyes to go in the background */
+    width: 1500px;
+    height: 1500px;
+    position: relative;
+    background-color: gray;
+    /* making the square into a circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #7b7b7b, #000000);
+}
+
+.clock::before {
+    content: "";
+    width: 1550px;
+    height: 1550px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.number {
+    /* arrange numbers so that they are adjusted every 30 degrees of the circle */
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    /* how far the numbers are according to the center */
+    inset: 70px;
+    /* font size of the numbers... what else? lol */
+    font-size: 110px;
+    color: white;
+    text-shadow: 0 0 12px black;
+}
+
+.number b {
+    /* convert the rotated numbers according to the radius back so that they are parallel horizontally */
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+}
+
+.center-dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+    /* positioned to the center but it isn't really..? the center is not aligned with the center-dot... */
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    /* adjust the hour, minute, and second hands to rotate according to the center */
+    transform: translate(50%) rotate(calc(var(--rotate) * 1deg));
+    transform-origin: bottom;
+}
+
+.hour-hand {
+    width: 18px;
+    height: 450px;
+    background-color: white;
+}
+
+.minute-hand {
+    width: 18px;
+    height: 550px;
+    background-color: white;
+}
+
+.second-hand {
+    width: 12px;
+    height: 650px;
+    background-color: white;
+}
+
+.eyes {
+    position: absolute;
+    top: 17%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.eye {
+    width: 960px;
+    height: 480px;
+    background: white;
+    display: inline-block;
+    margin: 500px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball {
+    width: 300px;
+    height: 300px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 80px solid grey;
+}
+
+.heading1 {
+    position: absolute;
+    top: 77%;
+    font-size: 300px;
+    color: white;
+}
+
+.heading3 {
+    position: absolute;
+    top: 88%;
+    font-size: 90px;
+    color: white;
+}
+
+.button {
+    position: absolute;
+    top: 93.5%;
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+}
