@@ -1,0 +1,1 @@
+Images aren't inserted, due to GIF exceeding 25 MB :/
