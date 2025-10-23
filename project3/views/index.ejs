@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Welcome to CraftersNet!</title>
+
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!-- <%- %> allows us to include other partial ejs files  -->
+        <%- include('menu.ejs', {}) %>
+        
+        <header class="main-title">
+          <div class="box1">
+            <h1><%= "Welcome all Fabricators and Crafters!" %></h1>
+            <p class="main-subtitle">
+              <%= "Explore other artist's works or share your artworks!" %>
+            </p>
+          </div>
+        </header>
+
+        <%- include('explanation.ejs', {}) %>
+
+        <%- include('footer.ejs', {}) %>
+
+        <!-- to display the output of a variable, we need <%= %> 
+        <% if(visible) {%>
+            <%=message %>
+        <% } %>
+
+        <br />
+
+        <%= paths[0] %>
+
+        <% for(let p of paths){ %>
+            <h2> <%= p %> </h2>
+            <p>this is the path</p>
+        <% } %> 
+      -->
+    </body>
+</html>

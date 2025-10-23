@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Explore projects</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="post-body">
+    <%- include('menu.ejs', {}) %>
+
+    <main class="explore-wrap">
+
+      <section class="post-grid">
+        <% for (let p of allPosts) { %>
+          <article class="post-card">
+            <header class="post-head">
+              <h3 class="post-title"><%= p.title || 'Untitled Project' %></h3>
+              <p class="post-author"><%= p.author || 'Anonymous' %></p>
+            </header>
+
+            <% if (p.description) { 
+                let shortDesc = p.description.length > 350 
+                  ? p.description.substring(0, 350) + "..." 
+                  : p.description; 
+           %>
+             <p class="post-desc"><%= shortDesc %></p>
+           <% } %>
+
+            <% if (p.imgSrc) { %>
+              <figure class="post-image">
+                <img src="<%= p.imgSrc %>" alt="project image">
+              </figure>
+            <% } %>
+
+            <% if (p.time) { %>
+              <p class="post-time"><%= p.time %></p>
+            <% } %>
+          </article>
+        <% } %>
+      </section>
+    </main>
+  </body>
+</html>

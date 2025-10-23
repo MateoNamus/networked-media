@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Share a project</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="post-body">
+    <%- include('menu.ejs', {}) %>
+
+    <div class="form">
+      <h1><u>Share Your Project!</u></h1>
+
+      <form action="/upload" method="POST" enctype="multipart/form-data" class="form-grid">
+        <label for="proj-name">Project Title:</label>
+        <input type="text" id="proj-name" name="proj-name" required>
+
+        <label for="author-name">Your Name:</label>
+        <input type="text" id="author-name" name="author-name">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="theImage">Project Image:</label>
+        <div class="actions">
+          <input type="file" id="theImage" name="theImage">
+          <button type="submit">I'm Ready to Share!</button>
+        </div>
+      </form>
+    </div>
+    <%- include('lowerframe.ejs', {}) %>
+  </body>
+</html>
