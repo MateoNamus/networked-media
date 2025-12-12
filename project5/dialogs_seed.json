@@ -1,0 +1,482 @@
+[
+    {
+      "branch": "campfire-intro",
+      "order": 0,
+      "type": "narration",
+      "speaker": null,
+      "text": "As you sit back, a soft crunch of leaves comes from the shadows."
+    },
+    {
+      "branch": "campfire-intro",
+      "order": 1,
+      "type": "narration",
+      "speaker": null,
+      "text": "A frail figure steps forward."
+    },
+    {
+      "branch": "campfire-intro",
+      "order": 2,
+      "type": "dialog",
+      "speaker": "OLD_MAN",
+      "text": "Well now. That is a fine fire you made. May I share the warmth? Nights like this chill the bones of an old wanderer."
+    },
+    {
+      "branch": "campfire-intro",
+      "order": 3,
+      "type": "narration",
+      "speaker": null,
+      "text": "He settles down beside the fire with surprising ease."
+    },
+    {
+      "branch": "campfire-intro",
+      "order": 4,
+      "type": "dialog",
+      "speaker": "OLD_MAN",
+      "text": "Do not mind me. I go where the warmth is. Fires, people, stories. Especially stories. Ah, and look at you. Trying to pretend everything is perfectly ordinary. You and I both know it is not. Tell me, traveler, what brings you this deep into the woods, with only your thoughts for company? Go on. Say anything you like. I am a good listener."
+    },
+  
+    {
+      "branch": "campfire-intro",
+      "order": 5,
+      "type": "choice",
+      "choiceGroup": "campfire-q1",
+      "choiceId": "just_camping",
+      "label": "Just camping.",
+      "playerSpeaker": "PLAYER",
+      "playerText": "Just camping.",
+      "replySpeaker": "OLD_MAN",
+      "replyText": "Ah yes. People often say they camp for fun. Though the ones who light fires alone in quiet places are usually escaping something. A noise. A memory. A feeling. I could be wrong."
+    },
+    {
+      "branch": "campfire-intro",
+      "order": 6,
+      "type": "choice",
+      "choiceGroup": "campfire-q1",
+      "choiceId": "needed_space",
+      "label": "Needed space to think.",
+      "playerSpeaker": "PLAYER",
+      "playerText": "Needed space to think.",
+      "replySpeaker": "OLD_MAN",
+      "replyText": "Thoughts can be loud when the world is loud. But when the world gets quiet, thoughts sometimes shout even louder. Funny, is it not? This forest is so peaceful, yet your mind has not matched its pace."
+    },
+    {
+        "branch": "campfire-intro",
+        "order": 7,
+        "type": "choice",
+        "choiceGroup": "campfire-q1",
+        "choiceId": "dont_want_to_talk",
+        "label": "I do not want to talk about it.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "I do not want to talk about it.",
+        "replySpeaker": "OLD_MAN",
+        "replyText": "A perfectly honest answer. But you know... You said it in a way that tells me you are already talking about it, without using the words. It is okay, I will simply sit here until you feel safe enough to speak.",
+        "followupLabel": "I think I am ready to speak now.",
+        "followupPlayerText": "I think I am ready to speak now.",
+        "followupReplyText": "Alright, lets continue with our conversation."
+      },      
+    {
+      "branch": "campfire-intro",
+      "order": 8,
+      "type": "choice",
+      "choiceGroup": "campfire-q1",
+      "choiceId": "why_asking",
+      "label": "Why are you asking?",
+      "playerSpeaker": "PLAYER",
+      "playerText": "Why are you asking?",
+      "replySpeaker": "OLD_MAN",
+      "replyText": "Because questions are little lanterns. Hold one up in the dark and you see the path a bit better. And because I can tell your heart is holding something heavy. We will uncover it gently. Together. Well. Together for as long as you keep me around. Choice is yours, after all. Players are powerful beings."
+    },
+    {
+        "branch": "campfire-intro",
+        "order": 9,
+        "type": "dialog",
+        "speaker": "OLD_MAN",
+        "text": "Let me ask you something simple. Not a trap. Not a trick. Just a start. When you woke up today, what emotion sat closest to you?"
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 10,
+        "type": "choice",
+        "choiceGroup": "campfire-emotion-q1",
+        "choiceId": "emotion_tired",
+        "label": "Tired.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "Tired.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 11,
+        "type": "choice",
+        "choiceGroup": "campfire-emotion-q1",
+        "choiceId": "emotion_anxious",
+        "label": "Anxious.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "Anxious.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 12,
+        "type": "choice",
+        "choiceGroup": "campfire-emotion-q1",
+        "choiceId": "emotion_empty",
+        "label": "Empty.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "Empty.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 13,
+        "type": "choice",
+        "choiceGroup": "campfire-emotion-q1",
+        "choiceId": "emotion_annoyed",
+        "label": "Annoyed.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "Annoyed.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+    
+      {
+        "branch": "campfire-intro",
+        "order": 14,
+        "type": "dialog",
+        "speaker": "OLD_MAN",
+        "text": "Hmm. Thank you for being honest. Honesty is like adding a fresh log to a fire. It burns brighter and warms more than you expect."
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 15,
+        "type": "narration",
+        "speaker": null,
+        "text": "He watches the flames."
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 16,
+        "type": "dialog",
+        "speaker": "OLD_MAN",
+        "text": "You know, traveler, people are very good at surviving days. Even hard ones. But they are not always good at understanding what their hearts are trying to say. That is where stories help. And lucky for you, I just so happen to know one. A tale woven by time, shaped by wandering souls and a few questionable decisions. You will make some decisions too. And the story will follow where you lead it. Before we begin, let me just ask one more thing. What feels most out of place in your life right now?"
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 18,
+        "type": "choice",
+        "choiceGroup": "campfire-problem-q1",
+        "choiceId": "alone_disconnected",
+        "label": "I feel alone or disconnected from people.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "I feel alone or disconnected from people.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 19,
+        "type": "choice",
+        "choiceGroup": "campfire-problem-q1",
+        "choiceId": "sad_weighed",
+        "label": "I feel weighed down or sad a lot.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "I feel weighed down or sad a lot.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 20,
+        "type": "choice",
+        "choiceGroup": "campfire-problem-q1",
+        "choiceId": "stressed_overwhelmed",
+        "label": "I feel stressed and overwhelmed.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "I feel stressed and overwhelmed.",
+        "replySpeaker": "",
+        "replyText": ""
+      },
+      {
+        "branch": "campfire-intro",
+        "order": 21,
+        "type": "choice",
+        "choiceGroup": "campfire-problem-q1",
+        "choiceId": "mixed_everything",
+        "label": "I do not know. Everything feels mixed.",
+        "playerSpeaker": "PLAYER",
+        "playerText": "I do not know. Everything feels mixed.",
+        "replySpeaker": "",
+        "replyText": ""
+      }
+]
+const aloneStory = [
+  {
+    branch: "alone-story",
+    order: 0,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Feeling cut off from others… yes, that is a quiet ache. It rarely screams. It settles. I’ve known someone who lived inside that silence for a long time. If you’ll listen, traveler, I’ll tell you her story."
+  },
+  {
+    branch: "alone-story",
+    order: 1,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Far in the northern hills lies a village named Winter Hollow. Not unfriendly, just cold. Winters arrived early, lingered long, and people kept to themselves out of habit. In a small house on the village’s edge lived a woman named Nira. A weaver by trade. She made warm blankets that wrapped others in comfort, yet none wrapped her in return. Every morning she opened her shutters, hoping someone might pass by. Every evening she closed them, having spoken to no one. It wasn’t that people disliked her. It was simply that the village lived in patterns she felt outside of, like a loose thread never woven into the whole cloth. One morning, she found an unfamiliar bundle on her doorstep. A tangled yarn left by someone who had tried and failed to learn weaving. A note sat on top: “Could you fix this? I don’t know who else to ask.” Nira looked at the yarn. Looked at the note. And felt a tug in her chest. Faint, but unmistakable."
+  },
+  {
+    branch: "alone-story",
+    order: 2,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "If you were Nira, alone for so long you’ve forgotten how to reach out… what would you do with this small sign of someone needing you?"
+  },
+
+  // Choice checkpoint (you can edit the labels/text to match your intended personality scoring later)
+  {
+    branch: "alone-story",
+    order: 3,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_help_quietly",
+    label: "Fix it quietly and leave it back without meeting them.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would fix it quietly and leave it back without trying to meet them.",
+    replySpeaker: "OLD_MAN",
+    replyText: "A gentle start. Sometimes the first bridge you build is one you do not have to stand on yet. But be careful: staying invisible can keep you safe, and also keep you unseen."
+  },
+  {
+    branch: "alone-story",
+    order: 4,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_invite",
+    label: "Fix it and attach a note inviting them to come by.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would fix it, and leave a note asking them to stop by so I can show them how to keep it from tangling again.",
+    replySpeaker: "OLD_MAN",
+    replyText: "That is you choosing connection on purpose. Not demanding it, not chasing it, simply opening a door and letting the other person decide whether to step through."
+  },
+  {
+    branch: "alone-story",
+    order: 5,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_ignore",
+    label: "Ignore it and leave it untouched.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would ignore it. I would not want to get pulled into something.",
+    replySpeaker: "OLD_MAN",
+    replyText: "That answer usually comes from someone who has been disappointed too often. Protecting yourself is understandable. Just remember: walls keep pain out, and they also keep warmth out."
+  },
+  {
+    branch: "alone-story",
+    order: 6,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_confront",
+    label: "Bring it inside, then go find who left it and speak to them directly.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would take it inside, then try to find who left it and talk to them directly.",
+    replySpeaker: "OLD_MAN",
+    replyText: "Bold. Honest. Sometimes the fastest way out of loneliness is to risk a small awkward moment. The skill is not bravery, it is tolerating the uncertainty of how they will respond."
+  },
+  {
+    branch: "alone-story",
+    order: 3,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_quiet_return",
+    label: "Fix the yarn quietly and return it without a word.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would fix it quietly and return it without a word.",
+    replySpeaker: "OLD_MAN",
+    replyText: "This reveals a desire to help while staying invisible. You offer warmth to others but shield yourself from being seen. Sometimes kindness becomes a mask for loneliness.",
+    stats: { CC: 1, SP: 2, IE: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 4,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_note_back",
+    label: "Fix it and write a short, friendly note back.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would fix it and leave a short, friendly note back.",
+    replySpeaker: "OLD_MAN",
+    replyText: "A cautious step toward connection. You open a door just enough for someone to know you’re willing, if they step closer.",
+    stats: { CC: 1, HO: 1, IE: 2 }
+  },
+  {
+    branch: "alone-story",
+    order: 5,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_talk_in_person",
+    label: "Ask who left it and try to talk in person.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would ask who left it and try to talk in person.",
+    replySpeaker: "OLD_MAN",
+    replyText: "You crave interaction even if anxiety stands behind it. This is brave, though vulnerability carries risks for a tender heart.",
+    stats: { HO: 2, CC: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 6,
+    type: "choice",
+    choiceGroup: "alone-nira-01",
+    choiceId: "nira_hesitate_disappointment",
+    label: "Hesitate, unsure if getting involved might lead to disappointment.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would hesitate. Getting involved might lead to disappointment.",
+    replySpeaker: "OLD_MAN",
+    replyText: "This points to fear born from old hurt or disappointment. Protecting yourself is natural, but walls keep out warmth as well as harm.",
+    stats: { SP: 2, DI: 1 }
+  },
+
+  // =========================
+  // Continuation after any choice
+  // =========================
+
+  {
+    branch: "alone-story",
+    order: 7,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Nira fixed the yarn. Her hands always knew what to do. The next day, she carried it to Market Square to look for its owner. The square hummed with activity: bakers calling out their pastries, travelers trading stories, children weaving between stalls. Nira stood at the edge, feeling like a note out of tune with the melody around her."
+  },
+  {
+    branch: "alone-story",
+    order: 8,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "After a while, a young boy hurried up to her."
+  },
+  {
+    branch: "alone-story",
+    order: 9,
+    type: "dialog",
+    speaker: "BOY",
+    text: "Did you fix it? Grandma said to ask if you… oh!"
+  },
+  {
+    branch: "alone-story",
+    order: 10,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "He paused, staring at the beautifully restored yarn."
+  },
+  {
+    branch: "alone-story",
+    order: 11,
+    type: "dialog",
+    speaker: "BOY",
+    text: "She couldn’t get the knots out. No one could. She’ll be so happy."
+  },
+  {
+    branch: "alone-story",
+    order: 12,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Nira smiled. Small, but real."
+  },
+  {
+    branch: "alone-story",
+    order: 13,
+    type: "dialog",
+    speaker: "BOY",
+    text: "Um… would you maybe come by later? Grandma likes meeting kind people."
+  },
+  {
+    branch: "alone-story",
+    order: 14,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Nira’s heart constricted. She wanted to. But the thought made her palms warm and her breath quicken."
+  },
+  {
+    branch: "alone-story",
+    order: 15,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "Here is Nira, standing on the threshold of an invitation, something she didn’t seek but secretly wanted. If you were the voice in her mind, guiding her next step, what would she do?"
+  },
+  {
+    branch: "alone-story",
+    order: 29,
+    type: "choice",
+    choiceGroup: "alone-nira-03",
+    choiceId: "visit_again",
+    label: "Visit again, trusting that the connection was real.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would visit again, trusting the connection was real.",
+    replySpeaker: "OLD_MAN",
+    replyText: "You believe connection grows through initiative. A brave stance for someone who’s carried loneliness.",
+    stats: { HO: 2, CC: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 30,
+    type: "choice",
+    choiceGroup: "alone-nira-03",
+    choiceId: "send_small_gift",
+    label: "Send a small gift or message first, testing the waters.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would send a small gift or message first.",
+    replySpeaker: "OLD_MAN",
+    replyText: "You prefer gentle opening moves. This shows sensitivity and fear of overwhelming others.",
+    stats: { IE: 2, CC: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 31,
+    type: "choice",
+    choiceGroup: "alone-nira-03",
+    choiceId: "wait_for_invite",
+    label: "Wait, hoping they invite her again so she feels wanted.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would wait, hoping they invite her again.",
+    replySpeaker: "OLD_MAN",
+    replyText: "This stems from longing for clear proof you’re valued. Understandable… but connection often needs mutual courage.",
+    stats: { DB: 2, SP: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 32,
+    type: "choice",
+    choiceGroup: "alone-nira-03",
+    choiceId: "withdraw_emotionally",
+    label: "Withdraw emotionally, convincing herself it was a one time kindness.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would withdraw emotionally. It was probably a one time kindness.",
+    replySpeaker: "OLD_MAN",
+    replyText: "Here lies the heart’s self defense: avoiding closeness to avoid hurt. But this preserves loneliness, not safety.",
+    stats: { SP: 2, DI: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 33,
+    type: "choice",
+    choiceGroup: "alone-nira-03",
+    choiceId: "reflect_seek_elsewhere",
+    label: "Reflect on what made her feel connected and seek that feeling elsewhere too.",
+    playerSpeaker: "PLAYER",
+    playerText: "I would reflect on what made her feel connected and seek that feeling elsewhere too.",
+    replySpeaker: "OLD_MAN",
+    replyText: "You’re searching not just for people, but for meaning within connection. A more mature yearning than you may realize.",
+    stats: { DI: 2, HO: 1 }
+  },
+  {
+    branch: "alone-story",
+    order: 34,
+    type: "dialog",
+    speaker: "OLD_MAN",
+    text: "You may not see it, traveler, but your choices reveal the shape of your loneliness more clearly than your words did."
+  }  
+];
+
+
+  
